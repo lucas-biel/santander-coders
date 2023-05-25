@@ -46,8 +46,8 @@ aside h1 span, main h2 span {
     width: 60rem;
     /* height: 52rem; */
     
-    border: 1px solid rgb(0, 0, 0, 0.4);
-    border-radius: 1.2rem;
+    border: var(--default-border);
+    border-radius: var(--default-border-radius);
 
     grid-area: form;
 }
@@ -71,7 +71,7 @@ main h2 {
 
     margin-top: 5.4rem;
 
-    border-radius: 1.2rem;
+    border-radius: var(--default-border-radius);
 }
 
 .actions a + a {
