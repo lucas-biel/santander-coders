@@ -35,14 +35,21 @@
                     <input type="text" id="input-name">
 
                     <label for="input-field">Campo de atuação</label>
-                    <input type="text" id="input-field">
+                    <div class="select-div">
+                        <select id="input-field">
+                            <option value="" selected disabled>Selecione uma opção</option>
+                            <option value="abrigo">Abrigo de animais</option>
+                        </select>
+                    </div>
                     
-                    <label for="input-points">Pontos de coleta</label>
-                    <input type="text" id="input-points">
-                    
-                    <button>
-                        <i class="fa-solid fa-plus-circle"></i>
-                    </button>
+                    <div class="points">
+                        <label for="input-points">Pontos de coleta</label>
+                        <input type="text" id="input-points">
+                        
+                        <button>
+                            <i class="fa-solid fa-plus-circle"></i>
+                        </button>
+                    </div>
                 </form>
                 
                 <div class="actions">
