@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%; /*? 10px */
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        ". . . . ."
+        ". logo . form ."
+        ". logo . form ."
+        ". . . . ."
+    ;
+
+    gap: 8.5rem;
+}
+
+aside {
+    grid-area: logo;
+}
+
+aside h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+}
+
+aside h1 span, main h2 span {
+    color: #ff5678;
+}
+
+.main-content {
+    padding: 5.7rem 4.4rem;
+    
+    width: 60rem;
+    /* height: 52rem; */
+    
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    border-radius: 1.2rem;
+
+    grid-area: form;
+}
+
+main h2 {
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+.actions a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #35e6e9;
+    color: white;
+    height: 5.5rem;
+    font-size: 2.4rem;
+    text-decoration: none;
+
+    margin-top: 5.4rem;
+
+    border-radius: 1.2rem;
+}
+
+.actions a + a {
+    background-color: #ff5678;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.6rem;
+    margin-top: 8rem;
+}
+
+footer a {
+    display: block;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: black;
+    font-weight: 700;
+}
